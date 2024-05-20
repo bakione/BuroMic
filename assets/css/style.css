@@ -1,0 +1,727 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Monsterrat Alternates", sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    color: #000;
+    font-weight: 600;
+ 
+}
+
+.btn.btn-primary{
+    text-align: center;
+    align-items: center;
+}
+label {
+    margin: 0 !important;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+section.panel {
+    width: 100%;
+    padding: 0 130px;
+}
+
+
+
+.section-title {
+    font-size: 50px;
+    color: #212328;
+    text-align: center;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.site-name {
+    font-size: 80px;
+}
+
+
+
+.btn-order:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.btn-white-big {
+    background-color: #fff;
+    color: #02050b;
+    padding: 10px 45px;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.btn-white-big:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-slider {
+    width: 50px;
+    padding: 5px;
+    background: transparent;
+}
+
+.btn-slider:focus {
+    box-shadow: none;
+}
+
+.delimiter {
+    width: 100%;
+}
+
+.btn.btn-primary {
+    background: #02050b !important;
+    border: #02050b !important;
+    align-items: center;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.btn-up {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 110;
+    padding: 15px;
+}
+
+.btn-up img {
+    width: 25px;
+}
+
+section#first-page {
+    height: 100vh;
+    color: #fff;
+    background-image: url("../img/fon.jpg");
+    background-repeat: no-repeat;
+    background-size: 110% 105%;
+}
+
+section#first-page > header {
+    width: 100%;
+    color: #fff;
+}
+
+section#first-page .logo img {
+    width: 100px;
+}
+
+section#first-page .contact > .item p {
+    font-size: 12px;
+}
+
+section#first-page .contact > .item img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+section#first-page .nav {
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+section#first-page .nav li {
+    padding-left: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+section#first-page .nav li:first-of-type {
+    padding-left: 0;
+}
+
+section#first-page .nav li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: .5s ease-in-out;
+}
+
+section#first-page .nav li:hover::after {
+    width: 50%;
+}
+
+section#advantages .item {
+    font-size: 50px;
+    cursor: default;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-100%);
+    transition-duration: .4s;
+    opacity: 1;
+}
+
+section#advantages .item img {
+    height: 150px;
+}
+
+section#advantages .item p {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #02050b;
+    font-size: 28px;
+}
+
+section#advantages .item:hover {
+    color: #02050b;
+}
+
+section#advantages input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
+section#advantages input[type="radio"]:checked + .advantages-label {
+    border: solid 1px #212328;
+    background-color: #212328;
+}
+
+section#advantages input[type="radio"]:checked ~ .item {
+    transform: translateX(100%);
+}
+
+section#advantages input[type="radio"]:checked + .advantages-label + .item {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+section#advantages .advantages-label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #e0e0e0;
+    cursor: pointer;
+    margin: 6px !important;
+    transition: .5s ease-in-out;
+}
+
+section#advantages #advantages-container {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+section#partners .item {
+    font-size: 50px;
+    cursor: default;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-100%);
+    transition-duration: .4s;
+    opacity: 1;
+}
+
+section#partners .item img {
+    height: 150px;
+}
+
+section#partners .item p {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #02050b;
+    font-size: 28px;
+}
+
+section#partners .item:hover {
+    color: #02050b;
+}
+
+section#partners input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
+section#partners input[type="radio"]:checked + .partners-label {
+    border: solid 1px #212328;
+    background-color: #212328;
+}
+
+section#partners input[type="radio"]:checked ~ .item {
+    transform: translateX(100%);
+}
+
+section#partners input[type="radio"]:checked + .partners-label + .item {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+section#partners .partners-label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #e0e0e0;
+    cursor: pointer;
+    margin: 6px !important;
+    transition: .5s ease-in-out;
+}
+
+section#partners #partners-container {
+    overflow: hidden;
+    position: relative;
+}
+
+section#about-us {
+    color: #fff;
+    margin-bottom: 100px;
+    height: 150vh;
+    background: url("../img/FON3.jpg") center no-repeat;
+    background-size: 170% 100%;
+    padding-top: 40px;
+}
+
+
+
+section#catalog {
+    padding-top: 100px;
+    
+    
+}
+
+
+section#catalog .categories {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section#catalog {
+    height: 100vh;
+    color: #fff;
+    background-image: url("../img/fon3.jpg");
+    background-repeat: no-repeat;
+    background-size: 110% 45%;
+    }
+section#catalog .categories ul {
+
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+section#catalog input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+
+section#catalog #all:checked ~ .categories #all-tab
+{
+    color: #fff;
+    background: #212328;
+}
+
+section#catalog #all:checked ~ .panels #all-container
+
+{
+    display: flex;  
+}
+
+section#catalog .categories li label {
+    display: inline-block;
+    user-select: none;
+    padding: 15px 25px;
+    border: solid 2px #212328;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #212328;
+    transition: .5s ease-in-out;
+  
+    
+}
+
+section#catalog .categories li {
+    margin-left: 25px;
+}
+
+section#catalog .categories li:first-of-type {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#catalog .catalog-container {
+    display: none;
+}
+
+section#catalog .catalog-container .c-card {
+    width: 320px;
+    border: solid 1px #e1e1e1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+section#catalog .catalog-container .c-card img {
+    width: 90%;
+    margin-top: 25px;
+}
+
+section#catalog .catalog-container .c-card .type span {
+    display: inline-block;
+    border-radius: 5px;
+    background: #02050b;
+    color: #fff;
+    padding: 1px 7px;
+    margin: 0 15px;
+}
+
+section#catalog .catalog-container .c-card .price-container {
+    padding: 0 15px;
+    margin-top: 15px;
+}
+section#catalog .catalog-container .c-card .btn.btn-primary {
+
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+
+}
+
+section#catalog .catalog-container .c-card .price-container .price {
+    color: #02050b;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+.card-body .text-upper3{
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+section#useful-info {
+ 
+    color: #fff;
+    background-image: url("../img/fon3.jpg");
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    }
+section#useful-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+section#useful-info .u-content {
+    margin-top: 10px;
+}
+
+
+section#useful-info .content .item {
+    width: 100%;
+    height: 70%;
+}
+
+
+section#useful-info .content .item img.item-img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 350px;
+}
+
+section#useful-info .content .item .title {
+    font-size: 50px;
+    color: #02050b;
+    margin: 15px 0;
+}
+
+
+section#sub {
+    height: 100vh;
+    margin-bottom: 15vh;
+    background: url("../img/FON4.jpg") center no-repeat;
+    background-size: 100% 70%;
+
+}
+
+
+footer {
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: calc(100% - 15vh);
+    left: 0;
+}
+
+footer .nav {
+    list-style-type: none;
+    display: flex;
+    color: #02050b;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+footer .nav li {
+    padding-left: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .nav li:first-of-type {
+    padding-left: 0;
+}
+
+footer .nav li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #3d67b0;
+    transition: .5s ease-in-out;
+}
+
+footer .nav li:hover::after {
+    width: 50%;
+}
+
+footer .footer-logo img {
+    width: 250px;
+}
+
+footer .contact > .item p {
+    font-size: 12px;
+}
+
+footer .contact > .item img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+footer .social-icons img {
+    width: 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+
+    section#about-us {
+        height: 100vh;
+   
+    }
+
+
+}
+
+@media (max-width: 1300px) {
+
+    section#about-us {
+        height: 85vh;
+    }
+
+
+}
+
+@media (max-width: 1100px) and (max-width: 1366px) {
+
+
+    section#about-us {
+        height: 70vh;
+    }
+
+    footer .contact > .item p {
+        font-size: 9px;
+    }
+
+    footer .contact > .item img {
+        width: 20px;
+        margin-right: 5px;
+
+    }
+
+    footer .social-icons img {
+        width: 35px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+   pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
